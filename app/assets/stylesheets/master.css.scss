@@ -23,10 +23,26 @@ hr {
   clear:both;
 }
 
+h3 {
+  text-align: center;
+  padding: 2rem;
+  span {
+    text-decoration: underline;
+  }
+  em {
+    color: #f84342;
+  }
+}
+
 h1, h2 {
   font-family: $default-font;
   font-weight: 600;
   letter-spacing: -1.5px;
+  text-align: center;
+}
+
+.quote-author {
+  margin-left: 4rem;
 }
 
 h1 {
@@ -81,4 +97,12 @@ h1 {
       color: #dfdfdf;
     }
   }
+}
+
+.form-control {
+  margin-bottom: $global-margin;
+}
+
+::selection {
+  background-color: #f84342;
 }

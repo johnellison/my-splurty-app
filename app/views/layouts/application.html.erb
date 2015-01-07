@@ -22,10 +22,10 @@
             </div>
           <% end %>
         </div>
-        <div class="col-xs-6 slogan">
+        <div class="col-sm-4 hidden-xs slogan">
           <p>When did you decide that you were going to drop out of college?</p>
         </div>
-        <div class="col-xs-3 links">
+        <div class="col-xs-8 col-xs-offset-1 col-sm-5 col-sm-offset-0 links">
           <%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
           <%= link_to 'About', about_path %>
         </div>
@@ -44,8 +44,8 @@
         </div>
         <div class="modal-body">
           <%= simple_form_for Quote.new do |f| %>
-            <%= f.input :saying %>
-            <%= f.input :author %>
+          <%= f.input :saying, :label => 'What is the quote you want to contribute?', :placeholder => 'When I realized I\'d rather be rich and free than rich and enslaved.' %>
+            <%= f.input :author, :label => 'Who said it?', :placeholder => 'Bill Gates' %>
             <br>
             
           
@@ -78,10 +78,10 @@
   <div class="footer">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-12 col-sm-6">
           <p><%= link_to 'See more quotes', root_path, :class => 'next-quote'  %></p>
         </div>
-        <div class="col-xs-6 footer-blurb">
+        <div class="col-xs-12 col-sm-6 footer-blurb">
           <p class="text-muted">This silly web app was made by <a href="http://john-ellison.com">John Ellison</a></p>
         </div>
       </div>
