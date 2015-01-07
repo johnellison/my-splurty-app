@@ -21,6 +21,8 @@ gem 'bootstrap-sass', '~> 3.3.0'
 # Use Autoprefixer for CSS vendor prefixes
 gem 'autoprefixer-rails'
 
+# Use SimpleForm
+gem 'simple_form'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby

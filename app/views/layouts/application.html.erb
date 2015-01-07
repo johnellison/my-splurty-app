@@ -11,20 +11,22 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-3">
-          <div class="circle">
-            <br />
-            COLLEGE
-            <br />
-            DROPOUTS
-            <br />
-            UNITE
-          </div>
+          <%= link_to root_path, :class => 'logo' do %>
+            <div class="circle">
+              <br />
+              COLLEGE
+              <br />
+              DROPOUTS
+              <br />
+              UNITE!
+            </div>
+          <% end %>
         </div>
         <div class="col-xs-4 slogan">
           <p>When did you decide that you were going to drop out of college?</p>
         </div>
         <div class="col-xs-5 links">
-          <%= link_to 'Contribute', '#' %>
+          <%= link_to 'Contribute', new_quote_path %>
           <%= link_to 'About', '#' %>
         </div>
       </div>
@@ -43,7 +45,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-6">
-          <p><%= link_to 'See more quotes', '#', :class => 'next-quote'  %></p>
+          <p><%= link_to 'See more quotes', root_path, :class => 'next-quote'  %></p>
         </div>
         <div class="col-xs-6 footer-blurb">
           <p class="text-muted">This silly web app was made by <a href="http://john-ellison.com">John Ellison</a></p>

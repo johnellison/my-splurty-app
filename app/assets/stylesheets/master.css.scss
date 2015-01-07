@@ -47,6 +47,16 @@ h1 {
     line-height: 16px;
     cursor: pointer;
     transform:rotate(-11deg);
+    transition: .2s all ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 3px 3px 3px gray;
+      transform:rotate(349deg);
+    }
+}
+
+.logo:hover {
+  text-decoration: none;
 }
 
 .slogan {
@@ -61,4 +71,5 @@ h1 {
   border-bottom: 1px solid #dfdfdf;
   font-family: $default-font;
   font-weight: 600;
+  margin-right: 1rem;
 }
