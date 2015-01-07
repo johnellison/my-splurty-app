@@ -7,6 +7,9 @@ class QuotesController < ApplicationController
     @quote = Quote.new
   end
 
+  def about
+  end
+
   def create
     @quote = Quote.create(quote_params)
     if @quote.invalid?
@@ -19,4 +22,5 @@ class QuotesController < ApplicationController
     def quote_params
       params.require(:quote).permit(:saying, :author)
     end
+    
 end

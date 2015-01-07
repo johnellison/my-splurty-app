@@ -1,6 +1,8 @@
 // Variables
 $default-font: "Open Sans Condensed", "Helvetica Neue", Helvetica, sans-serif;
 
+$global-margin: 2rem;
+
 // Styles
 
 body {
@@ -62,14 +64,21 @@ h1 {
 .slogan {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-style: italic;
-  padding-top: 26px;
+  padding-top: 5rem;
 }
 
-.links a {
-  color:black;
-  font-size: 25px;
-  border-bottom: 1px solid #dfdfdf;
-  font-family: $default-font;
-  font-weight: 600;
-  margin-right: 1rem;
+.links {
+  padding-top: 4rem;
+  a {
+    color:black;
+    font-size: 25px;
+    border-bottom: 1px solid #dfdfdf;
+    font-family: $default-font;
+    font-weight: 600;
+    margin-right: $global-margin;
+    &:hover {
+      text-decoration: none;
+      color: #dfdfdf;
+    }
+  }
 }
