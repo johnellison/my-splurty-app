@@ -29,12 +29,9 @@ h3 {
   span {
     text-decoration: underline;
   }
-  em {
-    color: #f84342;
-  }
 }
 
-h1, h2 {
+h1, h2, h4 {
   font-family: $default-font;
   font-weight: 600;
   letter-spacing: -1.5px;
@@ -47,6 +44,7 @@ h1, h2 {
 
 h1 {
   font-size: 4rem;
+  color: #f84342;
 }
 
 .circle {

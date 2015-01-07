@@ -22,10 +22,10 @@
             </div>
           <% end %>
         </div>
-        <div class="col-sm-4 hidden-xs slogan">
+        <div class="col-sm-5 hidden-xs slogan">
           <p>When did you decide that you were going to drop out of college?</p>
         </div>
-        <div class="col-xs-8 col-xs-offset-1 col-sm-5 col-sm-offset-0 links">
+        <div class="col-xs-9 col-sm-4 links">
           <%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
           <%= link_to 'About', about_path %>
         </div>
@@ -52,9 +52,9 @@
         </div>
         <div class="modal-footer">
           <button class="btn-default btn" data-dismiss="modal">Close</button>
-          <%= f.submit 'Submit', :class => 'btn btn-danger' %>
-          <% end %>
+          <%= f.submit 'Add Quote', :class => 'btn btn-danger' %>
         </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -78,11 +78,13 @@
   <div class="footer">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <p><%= link_to 'See more quotes', root_path, :class => 'next-quote'  %></p>
-        </div>
         <div class="col-xs-12 col-sm-6 footer-blurb">
           <p class="text-muted">This silly web app was made by <a href="http://john-ellison.com">John Ellison</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 footer-load">
+          <%= link_to root_path, :class => 'next-quote' do %>
+           <button class="btn btn-lg btn-danger">Load Another Quote</button>
+          <% end %>
         </div>
       </div>
     </div>
