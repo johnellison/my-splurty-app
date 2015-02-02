@@ -1,7 +1,15 @@
 require 'test_helper'
 
 class QuotesControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "quote show test" do
+    quote = Quote.create( author: 'Bob Stein', saying: 'I love science.')
+    get :show, :id => quote.id
+    assert_response :success
+  end
+
+  test "quote show page, not found" do
+    get :show, :id => 'NO'
+    assert_response :not_found
+  end
+
 end
