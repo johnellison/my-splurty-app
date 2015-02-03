@@ -2,7 +2,7 @@ require 'test_helper'
 
 class QuoteTest < ActiveSupport::TestCase
   test 'unique_tag' do
-    quote = Quote.create( author: 'Bob Stein', saying: 'I love science.')
+    quote = FactoryGirl.create(:quote)
     puts quote.inspect
 
     expected = 'BS#' + quote.id.to_s
